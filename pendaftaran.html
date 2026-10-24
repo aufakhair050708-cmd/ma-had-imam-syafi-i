@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pendaftaran | Ma'had Imam Syafi'i</title>
+<meta name="description" content="Formulir pendaftaran santri baru Ma'had Imam Syafi'i.">
+<meta name="theme-color" content="#0F3D2E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="lewati" href="#utama">Langsung ke konten</a>
+<header>
+<nav class="navbar" aria-label="Navigasi utama">
+<a class="logo" href="index.html">
+    <!-- <b lang="ar" aria-hidden="true">ش</b> -->
+     <img src="logo-hijau-teks.png" alt="Logo Ma'had Imam Syafi'i" width="60" height="60">
+    <span>Ma'had Imam Syafi'i<small>Pendidikan Al-Qur'an dan Ilmu Syar'i</small></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul class="nav-links" id="menu">
+<li><a href="index.html">Beranda</a></li>
+<li><a href="index.html#tentang">Tentang</a></li>
+<li><a href="index.html#program">Program</a></li>
+<li><a href="index.html#berita">Kabar Ma'had</a></li>
+<li><a href="informasi.html">Informasi Pendaftaran</a></li>
+<li><a href="pendaftaran.html" class="tombol" aria-current="page">Daftar Sekarang</a></li>
+</ul>
+</nav>
+</header>
+<main id="utama">
+<section class="hero kecil"><div class="wadah"><h1>Formulir Pendaftaran Santri Baru</h1><p>Isi data dengan benar. Semua kolom wajib diisi.</p></div></section>
+<section class="bagian"><div class="wadah sempit">
+<div class="sukses" id="sukses" role="status"><h3>Pendaftaran siap dikirim</h3><p>Aplikasi WhatsApp terbuka dengan data Anda. Tekan kirim di sana agar panitia menerima pendaftaran. Jika tidak terbuka, izinkan pop-up lalu isi ulang formulir.</p></div>
+<form id="form-daftar" novalidate>
+<div class="grup"><label for="nama">Nama lengkap santri</label><input class="isian" id="nama" name="nama" type="text" autocomplete="name" placeholder="Contoh: Ahmad Fauzan" required></div>
+<div class="baris">
+<div class="grup"><label for="jk">Jenis kelamin</label><select class="isian" id="jk" name="jk" required><option value="">Pilih</option><option>Laki-laki</option><option>Perempuan</option></select></div>
+<div class="grup"><label for="nisn">NISN</label><input class="isian" id="nisn" name="nisn" type="text" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10 digit angka" required><small>Tepat 10 digit.</small></div>
+</div>
+<div class="grup"><label for="sekolah">Sekolah asal (SMP/MTs)</label><input class="isian" id="sekolah" name="sekolah" type="text" placeholder="Contoh: SMP Negeri 1 Contoh" required></div>
+<div class="grup"><label for="program">Program yang diminati</label><select class="isian" id="program" name="program" required><option value="">Pilih program</option><option>Tahfidz Al-Qur'an</option><option>Kajian Kitab dan Fikih</option><option>Bahasa Arab</option></select></div>
+<div class="grup"><label for="wali">Nama wali</label><input class="isian" id="wali" name="wali" type="text" placeholder="Nama ayah atau wali" required></div>
+<div class="baris">
+<div class="grup"><label for="email">Email wali atau santri</label><input class="isian" id="email" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required></div>
+<div class="grup"><label for="hp">Nomor WhatsApp aktif</label><input class="isian" id="hp" name="hp" type="tel" autocomplete="tel" pattern="0[0-9]{9,13}" placeholder="08xxxxxxxxxx" required></div>
+</div>
+<button class="kirim" type="submit">Kirim Pendaftaran via WhatsApp</button>
+</form>
+</div></section>
+</main>
+<footer>
+<div class="wadah kolom">
+<div><h3>Ma'had Imam Syafi'i</h3><p>Membina santri berakhlak mulia, hafal Al-Qur'an, dan berilmu syar'i di atas manhaj Ahlus Sunnah.</p></div>
+<div><h3>Tautan</h3><p><a href="index.html#program">Program Pendidikan</a></p><p><a href="informasi.html">Informasi Pendaftaran</a></p><p><a href="pendaftaran.html">Formulir Pendaftaran</a></p></div>
+<div><h3>Kontak</h3><p>Jl. Contoh No. 1, Kota Anda</p><p>WhatsApp: <a href="https://wa.me/6281234567890">0812-3456-7890</a></p><p>Email: <a href="mailto:info@mahadimamsyafii.id">info@mahadimamsyafii.id</a></p></div>
+</div>
+<div class="wadah hak">&copy; 2026 Ma'had Imam Syafi'i. Seluruh hak cipta dilindungi.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
